@@ -60,6 +60,8 @@ command_line = "-m pytest -rA --doctest-modules --junitxml=pytest.xml"
 
 [tool.pytest.ini_options]
 addopts = "--doctest-modules --ignore=sigmf/apps/gui.py"
+# enables running `pytest` from root directory.
+testpaths = ["tests"]
 
 [tool.pylint]
     [tool.pylint.main]
